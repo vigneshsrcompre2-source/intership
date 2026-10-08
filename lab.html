@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Try an interactive mini design system playground by Your Name." />
+    <meta name="theme-color" content="#f5f4ef" />
+    <title>Design Lab — Your Name</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+    <link rel="stylesheet" href="css/lab.css" />
+    <script src="scripts/site.js" defer></script>
+    <script src="scripts/lab.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="index.html" aria-label="Your Name, home"><span class="wordmark-mark" aria-hidden="true">Y.</span><span>Your Name</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation"><span></span><span></span></button>
+      <nav class="site-navigation" id="site-navigation" aria-label="Main navigation"><a href="projects.html">Work</a><a href="about.html">About</a><a href="index.html#skills">Skills</a><a href="lab.html" aria-current="page">Lab</a><a class="nav-contact" href="contact.html">Let’s talk <span aria-hidden="true">↗</span></a></nav>
+    </header>
+    <main class="page-main">
+      <section class="page-intro section-shell">
+        <p class="breadcrumb"><a href="index.html">Home</a><span>/</span> Design lab</p>
+        <p class="eyebrow" style="margin-top: 28px">A small interactive experiment <span class="eyebrow-star">✳</span></p>
+        <h1>Make it <em>your</em> color.</h1>
+        <p>Change a couple of design tokens and watch the little interface respond. A tiny peek at the way a flexible design system works.</p>
+      </section>
+      <section class="lab-workbench section-shell" aria-label="Interactive color theme playground">
+        <div class="lab-controls">
+          <p class="lab-kicker">01 / YOUR PALETTE</p>
+          <h2>Choose a mood.</h2>
+          <p class="lab-description">Pick an accent and a surface. The preview and CSS tokens update as you go.</p>
+          <label class="color-control" for="accent-color"><span><strong>Accent color</strong><small>For buttons and highlights</small></span><input type="color" id="accent-color" value="#c7f36a" /></label>
+          <label class="color-control" for="surface-color"><span><strong>Surface color</strong><small>For the preview card</small></span><input type="color" id="surface-color" value="#d9e4cc" /></label>
+          <div class="lab-actions"><button class="button button-dark" type="button" data-copy-css>Copy CSS <span aria-hidden="true">↗</span></button><button class="lab-reset" type="button" data-reset-colors>Reset colors</button></div>
+          <p class="lab-status" data-lab-status role="status" aria-live="polite">Your color choices stay right here in your browser.</p>
+        </div>
+        <div class="lab-preview-column">
+          <p class="lab-kicker">02 / LIVE PREVIEW</p>
+          <article class="demo-card" data-demo-card>
+            <div class="demo-card-top"><span class="demo-logo"><i data-demo-dot></i> little things</span><span class="demo-menu">•••</span></div>
+            <div class="demo-card-content"><span class="demo-eyebrow">A NOTE TO SELF</span><h3>Small steps<br />still move <em>you.</em></h3><p>Keep showing up for the things that matter.</p><button type="button" class="demo-button" data-demo-button>Save this thought <span aria-hidden="true">↗</span></button></div>
+            <div class="demo-card-foot"><span>GOOD THINGS TAKE TIME</span><span>✳ &nbsp; 01 / 03</span></div>
+          </article>
+          <div class="token-panel"><div class="token-heading"><span>03 / GENERATED TOKENS</span><span>CSS</span></div><pre><code data-token-output>:root {
+  --accent: #c7f36a;
+  --surface: #d9e4cc;
+}</code></pre></div>
+        </div>
+      </section>
+      <section class="lab-note section-shell"><span aria-hidden="true">✳</span><p>This playground is a frontend demo: accessible form controls, live DOM updates, CSS custom properties, and a copy-to-clipboard interaction—all without a framework.</p><a class="text-link" href="projects.html">Back to the projects <span aria-hidden="true">↗</span></a></section>
+    </main>
+    <footer class="site-footer section-shell"><a class="wordmark footer-wordmark" href="index.html"><span class="wordmark-mark" aria-hidden="true">Y.</span><span>Your Name</span></a><p>Designed &amp; built with curiosity <span aria-hidden="true">✳</span></p><div class="footer-links"><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div><span class="footer-year">© <span data-current-year>2025</span></span></footer>
+  </body>
+</html>

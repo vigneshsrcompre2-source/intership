@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Selected frontend concepts and case studies by Your Name." />
+    <meta name="theme-color" content="#f5f4ef" />
+    <title>Selected Work — Your Name</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+    <script src="scripts/site.js" defer></script>
+    <script src="scripts/projects.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="index.html" aria-label="Your Name, home"><span class="wordmark-mark" aria-hidden="true">Y.</span><span>Your Name</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation"><span></span><span></span></button>
+      <nav class="site-navigation" id="site-navigation" aria-label="Main navigation">
+        <a href="projects.html" aria-current="page">Work</a><a href="about.html">About</a><a href="index.html#skills">Skills</a><a href="lab.html">Lab</a><a class="nav-contact" href="contact.html">Let’s talk <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="page-intro section-shell">
+        <p class="breadcrumb"><a href="index.html">Home</a><span>/</span> Work</p>
+        <p class="eyebrow" style="margin-top: 28px">A few things I’ve made <span class="eyebrow-star">✳</span></p>
+        <h1>Selected work<span class="heading-period">.</span></h1>
+        <p>A handful of thoughtful digital concepts, built around people first and the small details that make the web feel good.</p>
+      </section>
+      <section class="section-shell page-divider" aria-label="Project gallery">
+        <div class="filter-bar" role="group" aria-label="Filter projects by type">
+          <button class="filter-button" type="button" data-filter="all" aria-pressed="true">Everything</button>
+          <button class="filter-button" type="button" data-filter="design" aria-pressed="false">UI design</button>
+          <button class="filter-button" type="button" data-filter="frontend" aria-pressed="false">Frontend</button>
+          <button class="filter-button" type="button" data-filter="product" aria-pressed="false">Product thinking</button>
+          <span class="filter-count" data-result-count aria-live="polite">3 projects</span>
+        </div>
+        <div class="catalog-grid">
+          <article class="project-card catalog-card" data-category="design frontend">
+            <a class="project-link" href="case-studies/fieldnotes.html" aria-label="Read the Fieldnotes Journal case study">
+              <div class="project-art fieldnotes-art"><div class="fieldnotes-top"><span>fieldnotes</span><span>Issue 04&nbsp; · &nbsp;2025</span></div><div class="fieldnotes-title">A little<br />closer to<br /><em>the wild.</em></div><div class="fieldnotes-stamp">GO<br />OUT<br />SIDE <span>↗</span></div><div class="fieldnotes-bottom"><span>Stories for the nature-curious</span><span>Read the journal&nbsp; ↗</span></div></div>
+              <div class="project-info"><div><h3>Fieldnotes Journal</h3><p>A warm, editorial home for stories about the outdoors.</p></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+              <div class="project-tags"><span>UI design</span><span>Responsive web</span><span>Accessibility</span></div>
+            </a>
+          </article>
+          <article class="project-card catalog-card" data-category="frontend design">
+            <a class="project-link" href="case-studies/goodwell.html" aria-label="Read the Goodwell Wellness case study">
+              <div class="project-art goodwell-art"><div class="goodwell-top"><span class="goodwell-logo">goodwell<span>®</span></span><span>Today, a little better</span></div><div class="goodwell-content"><span class="goodwell-label">YOUR DAILY RESET</span><div class="goodwell-headline">Make room<br />for <span>you.</span></div><div class="goodwell-play">▶</div></div><div class="goodwell-bottom"><span>◷ &nbsp; 5 min</span><span>Find your calm&nbsp; →</span></div><div class="goodwell-orb"></div></div>
+              <div class="project-info"><div><h3>Goodwell Wellness</h3><p>A calming digital space for everyday wellbeing.</p></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+              <div class="project-tags"><span>Frontend</span><span>Interaction design</span></div>
+            </a>
+          </article>
+          <article class="project-card catalog-card" data-category="frontend product">
+            <a class="project-link" href="case-studies/loop.html" aria-label="Read the Loop Habit Tracker case study">
+              <div class="project-art loop-art"><div class="loop-top"><span class="loop-logo">loop<span>↗</span></span><span>Make good habits stick.</span></div><div class="loop-card"><div class="loop-card-heading"><span>THIS WEEK</span><span>•••</span></div><div class="loop-days"><span>M<i>✓</i></span><span>T<i>✓</i></span><span>W<i>✓</i></span><span>T<i>○</i></span><span>F<i>○</i></span><span>S<i>○</i></span><span>S<i>○</i></span></div><div class="loop-progress"><i></i></div><div class="loop-card-foot"><span>You're finding your rhythm.</span><b>3 / 7 days</b></div></div><div class="loop-spark" aria-hidden="true">✳</div></div>
+              <div class="project-info"><div><h3>Loop Habit Tracker</h3><p>A small, encouraging tool for building better habits.</p></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+              <div class="project-tags"><span>JavaScript</span><span>Product thinking</span></div>
+            </a>
+          </article>
+        </div>
+        <p class="project-disclaimer">These are illustrative concepts, not claims of shipped client work. Replace the stories with your own projects.</p>
+      </section>
+    </main>
+    <footer class="site-footer section-shell"><a class="wordmark footer-wordmark" href="index.html"><span class="wordmark-mark" aria-hidden="true">Y.</span><span>Your Name</span></a><p>Designed &amp; built with curiosity <span aria-hidden="true">✳</span></p><div class="footer-links"><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div><span class="footer-year">© <span data-current-year>2025</span></span></footer>
+  </body>
+</html>

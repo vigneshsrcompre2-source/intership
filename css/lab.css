@@ -1,0 +1,47 @@
+.lab-workbench { display: grid; grid-template-columns: .78fr 1.22fr; gap: 62px; padding: 34px; border: 1px solid var(--line); background: #f8f7f2; margin-bottom: 52px; }
+.lab-kicker { margin: 0; color: #85867e; font: 8px var(--mono); letter-spacing: .06em; }
+.lab-controls h2 { margin: 28px 0 8px; font: 600 23px var(--display); letter-spacing: -.05em; }
+.lab-description { margin: 0 0 27px; color: var(--muted); font-size: 10px; line-height: 1.7; }
+.color-control { display: flex; align-items: center; justify-content: space-between; gap: 15px; padding-block: 14px; border-top: 1px solid var(--line); cursor: pointer; }
+.color-control span { display: grid; gap: 5px; }
+.color-control strong { font-size: 10px; font-weight: 600; }
+.color-control small { color: var(--muted); font-size: 9px; }
+.color-control input { width: 43px; height: 34px; border: 1px solid var(--line); border-radius: 3px; padding: 3px; background: transparent; cursor: pointer; }
+.color-control input:focus-visible, .lab-actions button:focus-visible, .demo-button:focus-visible { outline: 2px solid #719b3b; outline-offset: 3px; }
+.lab-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 17px; margin-top: 23px; }
+.lab-actions .button { border: 0; cursor: pointer; }
+.lab-reset { padding: 6px 0; border: 0; border-bottom: 1px solid #b8b8af; background: transparent; color: #55564f; font-size: 9px; cursor: pointer; }
+.lab-status { min-height: 30px; margin: 14px 0 0; color: #686960; font-size: 9px; line-height: 1.6; }
+.lab-preview-column > .lab-kicker { margin-bottom: 13px; }
+.demo-card { --demo-accent: #c7f36a; --demo-surface: #d9e4cc; min-height: 290px; position: relative; overflow: hidden; padding: 18px 20px; background: var(--demo-surface); color: #293328; transition: background-color .2s; }
+.demo-card::after { content: ""; position: absolute; right: -54px; bottom: 30px; width: 185px; height: 185px; border: 1px solid #485b3c2e; border-radius: 50%; box-shadow: 0 0 0 26px #485b3c0c, 0 0 0 54px #485b3c09; }
+.demo-card-top, .demo-card-foot { position: relative; z-index: 1; display: flex; justify-content: space-between; align-items: center; font: 8px var(--mono); }
+.demo-logo { display: inline-flex; align-items: center; gap: 7px; font: 700 11px var(--display); letter-spacing: -.04em; }
+.demo-logo i { width: 9px; height: 9px; border-radius: 50%; background: var(--demo-accent); }
+.demo-menu { letter-spacing: 2px; }
+.demo-card-content { position: relative; z-index: 1; padding: 31px 0 28px 8px; }
+.demo-eyebrow { color: #65705f; font: 8px var(--mono); letter-spacing: .07em; }
+.demo-card-content h3 { margin: 11px 0; font: 500 clamp(27px, 4vw, 39px)/1.03 var(--display); letter-spacing: -.07em; }
+.demo-card-content h3 em { font-family: var(--serif); font-weight: 400; }
+.demo-card-content p { margin-bottom: 15px; color: #687164; font-size: 9px; }
+.demo-button { border: 0; border-radius: 2px; padding: 10px 12px; background: var(--demo-accent); color: #263023; font: 600 8px var(--sans); cursor: pointer; transition: transform .2s, background-color .2s; }
+.demo-button:hover { transform: translateY(-2px); }
+.demo-button span { padding-left: 10px; }
+.demo-card-foot { padding-top: 10px; border-top: 1px solid #54644b42; color: #667060; font-size: 7px; }
+.token-panel { margin-top: 17px; padding: 15px 17px; background: #282923; color: #f5f4ef; }
+.token-heading { display: flex; justify-content: space-between; color: #a7a89f; font: 8px var(--mono); }
+.token-panel pre { margin: 13px 0 0; overflow: auto; color: #c7f36a; font: 10px/1.8 var(--mono); }
+.lab-note { display: flex; align-items: center; gap: 13px; padding-block: 0 77px; }
+.lab-note > span { color: #819558; font-size: 18px; }
+.lab-note p { flex: 1; margin: 0; color: var(--muted); font-size: 10px; line-height: 1.7; }
+.lab-note .text-link { white-space: nowrap; }
+@media (max-width: 760px) {
+  .lab-workbench { grid-template-columns: 1fr; gap: 38px; padding: 23px; }
+}
+@media (max-width: 520px) {
+  .lab-workbench { padding: 18px; }
+  .demo-card { min-height: 275px; }
+  .lab-note { align-items: flex-start; flex-wrap: wrap; padding-bottom: 55px; }
+  .lab-note p { flex-basis: calc(100% - 35px); }
+  .lab-note .text-link { margin-left: 31px; }
+}
